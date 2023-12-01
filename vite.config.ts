@@ -37,7 +37,7 @@ export default defineConfig({
         },
       ],
       dts: "./auto-imports.d.ts", //生成自动导入的ts声明文件
-      dirs: ["src/utils", "src/plugins", "src/request"],
+      dirs: ["src/utils", "src/plugins/ble","src/plugins/camera", "src/request"],
     }),
     Components({
       dirs: ["src/components"],

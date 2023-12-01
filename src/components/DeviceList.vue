@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+  <!-- <ion-page> -->
     <ion-content color="bg-dark">
       <div class="main-container">
         <div class="list-container">
@@ -42,17 +42,18 @@
         </ion-loading>
       </div>
     </ion-content>
-  </ion-page>
+  <!-- </ion-page> -->
 </template>
 <script lang="ts" setup>
 import { Device } from "@/utils/interface";
+// import instanceDevice from "@/plugins/ble/instanceDevice";
 
 const router = useRouter();
 const deviceList: { data: Array<Device> } = reactive({ data: [] });
 const selectDevice = ref("");
 
 onMounted(() => {
-  scanDevice();
+  // scanDevice();
 });
 
 // onIonViewWillEnter(() => {
